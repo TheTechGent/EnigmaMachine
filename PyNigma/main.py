@@ -1,15 +1,10 @@
-"""
-Reflector:  A
-Rotors:     I-II-III
-Plugboard:  A-R, G-K, O-X
-Message:    A => X
-"""
-
 from keyboard import Keyboard
 from plugboard import Plugboard
 from rotor import Rotor
 from reflector import Reflector
+from enigma import Enigma
 
+# Separate components of the Enigma Machine
 I = Rotor("EKMFLGDQVZNTOWYHXUSPAIBRCJ", "Q")
 II = Rotor("AJDKSIRUXBLHWTMCQGZNPYFVOE", "E")
 III = Rotor("BDFHJLCPRTXVZNYEIWGAKMUSQO", "V")
@@ -19,17 +14,7 @@ C = Reflector("FVPJIAOYEDRZXWGCTKUQSBNMHL")
 KB = Keyboard()
 PB = Plugboard(["AR", "GK", "OX"])
 
-letter = "A"
-signal = KB.forward(letter)
-signal = PB.forward(signal)
-signal = III.forward(signal)
-signal = II.forward(signal)
-signal = I.forward(signal)
-signal = A.reflect(signal)
-signal = I.backward(signal)
-signal = II.backward(signal)
-signal = III.backward(signal)
-signal = PB.backward(signal)
-letter = KB.backward(signal)
+# Instance of the Enigma Machine
+ENIGMA = Enigma(A, I, II, III, PB, KB)
 
-print(letter)
+print(ENIGMA.encipher("A"))

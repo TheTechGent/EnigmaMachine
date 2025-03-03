@@ -1,0 +1,64 @@
+Enigma Machine - Code breakdown
+
+	How it works:
+	
+		Encoding a Message
+			
+			Initial Setup: The machine has a set of rotors and a plugboard. Each rotor can be set to a different initial position, and the plugboard can be configured to swap pairs of letters.
+
+			Input: When a key is pressed, an electrical circuit is completed, and the current passes through the plugboard, then through the rotors, and finally to a lampboard that lights up the encoded letter.
+
+
+			Rotor Movement: After each key press, the rotors rotate, changing the electrical pathways and ensuring that the same letter will be encoded differently each time it is pressed.
+			
+		Decoding a Message
+			
+			To decode a message, you need to reverse the encoding process. Here’s how:
+
+			Same Initial Setup: The decoding machine must be set up in the exact same way as the encoding machine. This means the rotors must be in the same initial positions, and the plugboard must have the same connections.
+
+			Input the Encoded Message: When you input the encoded message, the electrical current will pass through the machine in the same way it did during encoding, but in reverse.
+				
+			Output: The machine will output the original message, as the same pathways that encoded the message will now decode it.
+				
+			Example
+				Let's say you want to encode the letter 'A':
+
+				Initial Setup: Rotor positions are set, and the plugboard swaps A with B.
+				
+				Press 'A': The current goes through the plugboard (A -> B), then through the rotors, and lights up 'X' on the lampboard.
+				
+				Rotor Movement: The rotors move to a new position.
+				
+				To decode 'X':
+
+				Same Initial Setup: Ensure the machine is set up exactly as it was during encoding.
+				
+				Press 'X': The current goes through the rotors and plugboard in reverse, lighting up 'A' on the lampboard.
+	
+
+	Key Functionality to program:
+
+	Setting a Key:
+
+		- The key defines the intial starting position of the three Rotors.
+	
+	Input:
+	
+		- Rotor - Able to set starting position of each rotor.
+		
+		- Plug Board - Able to swap letters
+		
+		- Press of a letter from a keyboard
+		
+	Encoding Process
+	
+		- pathway through the rotors picks a letter.
+		
+		- lampboard - lights up and it shows the encoded letter.
+		
+		- rotor rotates to ensure the next letter will receive a different letter.
+		
+	Decoding Process
+	
+		- All of above in reverse

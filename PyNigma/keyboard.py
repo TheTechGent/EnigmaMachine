@@ -1,5 +1,8 @@
 class Keyboard:
 
+    def __init__(self):
+        pass
+
     def forward(self, letter):
          
          signal = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".find(letter)
