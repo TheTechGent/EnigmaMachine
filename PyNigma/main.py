@@ -1,3 +1,9 @@
+"""
+TODO:
+    - Make this more robust so that it can deal with any case and spaces.
+    - Give it a UI.
+"""
+
 from keyboard import Keyboard
 from plugboard import Plugboard
 from rotor import Rotor
@@ -8,13 +14,29 @@ from enigma import Enigma
 I = Rotor("EKMFLGDQVZNTOWYHXUSPAIBRCJ", "Q")
 II = Rotor("AJDKSIRUXBLHWTMCQGZNPYFVOE", "E")
 III = Rotor("BDFHJLCPRTXVZNYEIWGAKMUSQO", "V")
+IV = Rotor("ESOVPZJAYQUIRHXLNFTGKDCMWB", "J")
+V = Rotor("VZBRGITYUPSDNHLXAWMJQOFECK", "Z")
 A = Reflector("EJMZALYXVBWFCRQUONTSPIKHGD")
 B = Reflector("YRUHQSLDPXNGOKMIEBFZCWVJAT")
 C = Reflector("FVPJIAOYEDRZXWGCTKUQSBNMHL")
 KB = Keyboard()
-PB = Plugboard(["AR", "GK", "OX"])
+PB = Plugboard(["AR", "VE", "LY"])
 
-# Instance of the Enigma Machine
-ENIGMA = Enigma(A, I, II, III, PB, KB)
+# Setup Enigma Machine
+ENIGMA = Enigma(B, IV, II, I, PB, KB)
 
-print(ENIGMA.encipher("A"))
+# Set rings
+ENIGMA.set_rings((1, 22, 1))
+
+# Set key
+ENIGMA.set_key("AVA")
+
+# Type message
+message = "YLZYESAZZRLNRRMXEYDIZOK"
+cipher_text = ""
+
+# Encipher message
+for letter in message:
+    cipher_text = cipher_text + ENIGMA.encipher(letter)
+
+print(cipher_text)
