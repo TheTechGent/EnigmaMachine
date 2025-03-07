@@ -29,10 +29,10 @@ ENIGMA = Enigma(B, IV, II, I, PB, KB)
 ENIGMA.set_rings((1, 22, 1))
 
 # Set key
-ENIGMA.set_key("AVA")
+ENIGMA.set_key("AAA")
 
 # Type message
-message = "YLZYESAZZRLNRRMXEYDIZOK"
+message = "MARK"
 cipher_text = ""
 
 # Encipher message
