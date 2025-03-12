@@ -39,4 +39,4 @@ cipher_text = ""
 for letter in message:
     cipher_text = cipher_text + ENIGMA.encipher(letter)
 
-print(cipher_text)
+# print(cipher_text)
