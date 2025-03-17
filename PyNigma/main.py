@@ -23,20 +23,20 @@ KB = Keyboard()
 PB = Plugboard(["AR", "VE", "LY"])
 
 # Setup Enigma Machine
-ENIGMA = Enigma(B, IV, II, I, PB, KB)
+ENIGMA = Enigma(B, I, II, III, PB, KB)
 
 # Set rings
-ENIGMA.set_rings((1, 22, 1))
+ENIGMA.set_rings((1, 1, 1))
 
 # Set key
 ENIGMA.set_key("AAA")
 
 # Type message
-message = "MARK"
+message = "HELLOWORLD"
 cipher_text = ""
 
 # Encipher message
 for letter in message:
     cipher_text = cipher_text + ENIGMA.encipher(letter)
 
-# print(cipher_text)
+print(cipher_text)
