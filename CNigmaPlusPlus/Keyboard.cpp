@@ -1,19 +1,18 @@
+#include "pch.h"
 #include "Keyboard.h"
 
-Keyboard::Keyboard()
-{
-}
+Keyboard::Keyboard(){}
 
-int Keyboard::Forward(char Letter)
+size_t Keyboard::Forward(const char& Letter)
 {
-    int Signal = Alphabet.find(Letter);
+    const size_t Signal = Alphabet.find(Letter);
     
     return Signal;
 }
 
-char Keyboard::Backward(int Signal)
+char Keyboard::Backward(const size_t& Signal)
 {
-    char Letter = Alphabet[Signal];
+    const char Letter = Alphabet[Signal];
 
     return Letter;
 }

@@ -12,6 +12,10 @@ pos_B = 17
 print(alphabet[:pos_A] + B + alphabet[pos_A + 1:])
 print(alphabet[:pos_B] + A + alphabet[pos_B + 1:])
 
+letter = ""
+input(letter)
+
+print(letter)
 
 # for letter in alphabet:
 

@@ -1,18 +1,19 @@
 #pragma once
-#include <iostream>
 
 class Keyboard
 {
-
-	std::string Alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 public:
 
 	Keyboard();
 
-	int Forward(char Letter);
+	size_t Forward(const char& Letter);
 
-	char Backward(int Signal);
+	char Backward(const size_t& Signal);
+
+private:
+
+	string Alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 };
 

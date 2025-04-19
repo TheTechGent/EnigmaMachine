@@ -32,7 +32,7 @@ ENIGMA.set_rings((1, 1, 1))
 ENIGMA.set_key("AAA")
 
 # Type message
-message = "HELLOWORLD"
+message = "HELLOJOE"
 cipher_text = ""
 
 # Encipher message

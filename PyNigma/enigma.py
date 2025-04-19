@@ -1,6 +1,6 @@
 class Enigma:
 
-    def __init__(self, reflector, rotor1, rotor2, rotor3, plugboard, keyboard):
+    def __init__(self, reflector: object, rotor1: object, rotor2: object, rotor3: object, plugboard: object, keyboard: object):
         self.reflector = reflector
         self.rotor1 = rotor1
         self.rotor2 = rotor2
@@ -8,7 +8,7 @@ class Enigma:
         self.plugboard = plugboard
         self.keyboard = keyboard
 
-    def rotate_rotor(self):
+    def rotate_rotor(self) -> None:
         
         if self.rotor2.left[0] == self.rotor2.notch and self.rotor3.left[0] == self.rotor3.notch:
             self.rotor1.rotate()
@@ -37,7 +37,7 @@ class Enigma:
         self.rotor2.rotate_to_letter(key[1])
         self.rotor3.rotate_to_letter(key[2])
 
-    def encipher(self, letter):
+    def encipher(self, letter) -> str:
         
         # rotate the rotors
         self.rotate_rotor()
