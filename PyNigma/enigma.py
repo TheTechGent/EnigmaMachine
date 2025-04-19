@@ -1,3 +1,6 @@
+from __future__ import annotations
+
+
 class Enigma:
 
     def __init__(self, reflector: object, rotor1: object, rotor2: object, rotor3: object, plugboard: object, keyboard: object):
@@ -14,7 +17,7 @@ class Enigma:
             self.rotor1.rotate()
             self.rotor2.rotate()
             self.rotor3.rotate()
-        
+
         elif self.rotor2.left[0] == self.rotor2.notch:
             self.rotor1.rotate()
             self.rotor2.rotate()
@@ -25,14 +28,17 @@ class Enigma:
             self.rotor3.rotate()
 
         else:
-            self.rotor3.rotate() 
+            self.rotor3.rotate()
 
-    def set_rings(self, rings):
+    def set_rings(self, rings: tuple = (1, 1, 1)) -> None:
         self.rotor1.set_ring(rings[0])
         self.rotor2.set_ring(rings[1])
         self.rotor3.set_ring(rings[2])
 
-    def set_key(self, key):
+    def set_key(self, key: str = "AAA") -> None:
+        """
+        Sets starting position of rotors. Requires three letters as str i.e."ABC" which sets rotors in order r1=A, r2=B, r3=C.
+        """
         self.rotor1.rotate_to_letter(key[0])
         self.rotor2.rotate_to_letter(key[1])
         self.rotor3.rotate_to_letter(key[2])
@@ -41,7 +47,6 @@ class Enigma:
         
         # rotate the rotors
         self.rotate_rotor()
-
 
         # signal passes through enigma machine, forward, reflect, then back.
         signal = self.keyboard.forward(letter)
