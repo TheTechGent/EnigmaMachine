@@ -1,21 +1,19 @@
-"""
-Keyboard and Lampboard
-"""
-
 class Keyboard:
+    """
+    Keyboard and Lampboard
+    """
 
-    def __init__(self):
-        self.alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" 
+    def __init__(self) -> None:
+        self.alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-    def forward(self, letter):
-         
-         signal = self.alphabet.find(letter)
-         
-         return signal
+    def forward(self, letter: str) -> int:
 
+        signal = self.alphabet.find(letter)
 
-    def backward(self, signal):
+        return signal
 
-        letter = self.alphabet[signal]     
-    
+    def backward(self, signal: int) -> str:
+
+        letter = self.alphabet[signal]
+
         return letter

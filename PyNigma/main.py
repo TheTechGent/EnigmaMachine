@@ -1,7 +1,8 @@
 """
 TODO:
-    - Make this more robust so that it can deal with any case and spaces.
-    - Give it a UI.
+    - Make this more robust so that it can deal with lettering of any case, spaces and mistakes.
+    - backspaces will need to reverse the rotation of the rotor.
+    - Give it a UI using pyqt.
 """
 
 from keyboard import Keyboard
@@ -9,13 +10,14 @@ from plugboard import Plugboard
 from rotor import Rotor
 from reflector import Reflector
 from enigma import Enigma
+from components import e_rotors
 
 # Separate components of the Enigma Machine
-I = Rotor("EKMFLGDQVZNTOWYHXUSPAIBRCJ", "Q")
-II = Rotor("AJDKSIRUXBLHWTMCQGZNPYFVOE", "E")
-III = Rotor("BDFHJLCPRTXVZNYEIWGAKMUSQO", "V")
-IV = Rotor("ESOVPZJAYQUIRHXLNFTGKDCMWB", "J")
-V = Rotor("VZBRGITYUPSDNHLXAWMJQOFECK", "Z")
+I = Rotor(e_rotors.I)
+II = Rotor(e_rotors.II)
+III = Rotor(e_rotors.III)
+IV = Rotor(e_rotors.IV)
+V = Rotor(e_rotors.V)
 A = Reflector("EJMZALYXVBWFCRQUONTSPIKHGD")
 B = Reflector("YRUHQSLDPXNGOKMIEBFZCWVJAT")
 C = Reflector("FVPJIAOYEDRZXWGCTKUQSBNMHL")

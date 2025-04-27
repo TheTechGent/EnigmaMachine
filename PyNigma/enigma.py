@@ -3,7 +3,15 @@ from __future__ import annotations
 
 class Enigma:
 
-    def __init__(self, reflector: object, rotor1: object, rotor2: object, rotor3: object, plugboard: object, keyboard: object):
+    def __init__(
+        self,
+        reflector: object,
+        rotor1: object,
+        rotor2: object,
+        rotor3: object,
+        plugboard: object,
+        keyboard: object,
+    ) -> None:
         self.reflector = reflector
         self.rotor1 = rotor1
         self.rotor2 = rotor2
@@ -12,8 +20,11 @@ class Enigma:
         self.keyboard = keyboard
 
     def rotate_rotor(self) -> None:
-        
-        if self.rotor2.left[0] == self.rotor2.notch and self.rotor3.left[0] == self.rotor3.notch:
+
+        if (
+            self.rotor2.left[0] == self.rotor2.notch
+            and self.rotor3.left[0] == self.rotor3.notch
+        ):
             self.rotor1.rotate()
             self.rotor2.rotate()
             self.rotor3.rotate()
@@ -43,8 +54,8 @@ class Enigma:
         self.rotor2.rotate_to_letter(key[1])
         self.rotor3.rotate_to_letter(key[2])
 
-    def encipher(self, letter) -> str:
-        
+    def encipher(self, letter: str) -> str:
+
         # rotate the rotors
         self.rotate_rotor()
 
