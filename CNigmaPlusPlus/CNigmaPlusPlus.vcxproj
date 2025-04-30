@@ -129,7 +129,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="EnigmaMachine.cpp" />
+    <ClCompile Include="enigma_machine.cpp" />
     <ClCompile Include="Keyboard.cpp" />
     <ClCompile Include="Logs.cpp" />
     <ClCompile Include="pch.cpp">
@@ -141,7 +141,7 @@
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="EnigmaMachine.h" />
+    <ClInclude Include="enigma_machine.h" />
     <ClInclude Include="Keyboard.h" />
     <ClInclude Include="Logs.h" />
     <ClInclude Include="pch.h" />

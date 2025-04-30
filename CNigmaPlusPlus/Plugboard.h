@@ -6,13 +6,13 @@ class Plugboard
 
 public:
 
-	Plugboard(const vector<string>& LetterPairs);
+	explicit Plugboard(const vector<string> &letter_pairs);
 
-	size_t Forward(const size_t& Signal);
+	size_t Forward(const size_t& signal);
 
 	size_t Backward(const size_t& Signal);
 
-	void Show();
+	void Show() const;
 
 private:
 

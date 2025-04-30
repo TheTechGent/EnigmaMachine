@@ -1,12 +1,12 @@
 #include "pch.h"
 #include "Plugboard.h"
 
-Plugboard::Plugboard(const vector<string>& LetterPairs)
+Plugboard::Plugboard(const vector<string> &letter_pairs)
 {
-	for (string Pair : LetterPairs)
+	for (string pair : letter_pairs)
 	{
-		char Letter1 = Pair[0];
-		char Letter2 = Pair[1];
+		char Letter1 = pair[0];
+		char Letter2 = pair[1];
 
 		size_t Pos1 = PlugboardAlphabet.find(Letter1);
 		size_t Pos2 = PlugboardAlphabet.find(Letter2);
@@ -34,7 +34,7 @@ size_t Plugboard::Backward(const size_t& InSignal)
 	return OutSignal;
 }
 
-void Plugboard::Show()
+void Plugboard::Show() const
 {
 	cout << PlugboardAlphabet << endl;
 }

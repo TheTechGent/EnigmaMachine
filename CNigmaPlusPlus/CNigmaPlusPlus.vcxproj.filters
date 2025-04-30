@@ -30,7 +30,7 @@
     <ClCompile Include="Reflector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="EnigmaMachine.cpp">
+    <ClCompile Include="enigma_machine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp">
@@ -53,7 +53,7 @@
     <ClInclude Include="Reflector.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="EnigmaMachine.h">
+    <ClInclude Include="enigma_machine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="pch.h">

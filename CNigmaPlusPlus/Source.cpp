@@ -1,30 +1,20 @@
 #include "pch.h"
-#include "EnigmaMachine.h"
-#include "Logs.h"
+#include "enigma_machine.h"
 
 int main(int argc, char* argv[])
 {
-	// Initialise Enigma Machine Components and configure for desired message
-	Keyboard *KB = new Keyboard();
-	Plugboard *PB = new Plugboard({});
-	Rotor *R1 = new Rotor(E_Rotors::I);
-	Rotor *R2 = new Rotor(E_Rotors::II);
-	Rotor *R3 = new Rotor(E_Rotors::III);
-	Reflector *REF = new Reflector(Reflectors::B);
+	// Enigma Machine primary Components. These can be configured for different message enciphering.
+	Keyboard kb;
+	Plugboard pb({});
+	Rotor r1(ERotors::I);
+	Rotor r2(ERotors::II);
+	Rotor r3(ERotors::III);
+	Reflector ref(Reflectors::B);
 
-	// Initialise Enigma Machine (EM)
-	EnigmaMachine EM(REF, R1, R2, R3, PB, KB);
+	EnigmaMachine em(ref, r1, r2, r3, pb, kb);
 
-	//R1.ShowRotor();
-	//cout << endl;
-	//R1.Rotate();
-	//R1.ShowRotor();
-	//cout << endl;
-	//R1.Rotate(false);
-	//R1.ShowRotor();
-
-	// Run Console Program
-	EM.Run();
+	// Runs Console Program
+	em.Run();
 
 	return 0;
 }

@@ -2,40 +2,56 @@
 #include "Logs.h"
 
 Logs::Logs()
-{
-}
+= default;
 
-void Logs::AddToRotationHistory(vector<E_RotationsLog> RHStep)
+void Logs::AddToRotorHistory(const vector<ERotationsLog>& rotor_history_step)
 {
 	
-	RHistory.insert(make_pair(RHIndex,RHStep));
+	rotor_history.insert(make_pair(rotor_history_key, rotor_history_step));
 	
-	RHIndex++;
+	rotor_history_key++;
 }
 
-vector<E_RotationsLog> Logs::GetLatestRotationHistory(const bool& RemoveEntry)
+vector<ERotationsLog> Logs::GetRotorHistory(const bool& remove_entry)
 {
-	vector<E_RotationsLog> RHCurrentStep;
+	vector<ERotationsLog> rotor_history_current_step;
 
-	if (!RHistory.empty() and RemoveEntry)
+	if (!rotor_history.empty() and remove_entry)
 	{
-		auto LastEntry = prev(RHistory.end());
-		vector<E_RotationsLog> RHCurrentStep = LastEntry->second;
-		RHistory.erase(LastEntry);
+		const auto last_entry = prev(rotor_history.end());
+		rotor_history_current_step = last_entry->second;
+		rotor_history.erase(last_entry);
 	}
-	else if (!RHistory.empty())
+	else if (!rotor_history.empty())
 	{
-		auto LastEntry = prev(RHistory.end());
-		vector<E_RotationsLog> RHCurrentStep = LastEntry->second;
+		const auto last_entry = prev(rotor_history.end());
+		rotor_history_current_step = last_entry->second;
 	}
-	return RHCurrentStep;
+	return rotor_history_current_step;
 }
 
-void Logs::ShowRotationHistory()
+void Logs::ShowRotorHistory() const
 {
-	for (int i; i < RHistory.size(); )
+	for (const auto& pair : rotor_history)
 	{
-		vector<ERotationLog> CurrentRLine = RHistory.at(i);
+		cout << "Entry: " << pair.first << "\n";
+		const vector<ERotationsLog>& current_rotor_line = pair.second;
+		for (const auto& log : current_rotor_line)
+		{
+			cout << ToString(log) << "\n";
+		}
 	}
 	
+}
+
+string Logs::ToString(const ERotationsLog& log)
+{
+	switch (log)
+	{
+	case ERotationsLog::rotor1_rotated: return "Rotor 1 - Rotated";
+	case ERotationsLog::rotor2_rotated: return "Rotor 2 - Rotated";
+	case ERotationsLog::rotor3_rotated: return "Rotor 3 - Rotated";
+	}
+
+	return "Unknown";
 }

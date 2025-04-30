@@ -1,10 +1,10 @@
 #pragma once
 
-enum E_RotationsLog
+enum class ERotationsLog : uint8_t
 {
-	Rotor1_Rotated = 1,
-	Rotor2_Rotated = 2,
-	Rotor3_Rotated = 3
+	rotor1_rotated = 1,
+	rotor2_rotated = 2,
+	rotor3_rotated = 3
 };
 
 class Logs
@@ -12,18 +12,17 @@ class Logs
 
 public:
 
-	Logs();
+	explicit Logs();
 
-	void AddToRotationHistory(vector<E_RotationsLog> RHStep);
-
-	vector<E_RotationsLog> GetLatestRotationHistory(const bool &RemoveEntry=true);
-
-	void ShowRotationHistory();
-
+	void AddToRotorHistory(const vector<ERotationsLog>& rotor_history_step);
+	void ShowRotorHistory() const;
+	vector<ERotationsLog> GetRotorHistory(const bool& remove_entry=true);
+	
 private:
 
-	int RHIndex = 1;
+	static string ToString(const ERotationsLog& log);
 
-	map<int, vector<E_RotationsLog>> RHistory;
+	int rotor_history_key = 1;
+	map<int, vector<ERotationsLog>> rotor_history;
 };
 

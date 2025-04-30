@@ -1,6 +1,6 @@
 #pragma once
 
-enum E_Rotors 
+enum ERotors : uint8_t
 {
 	I,
 	II, 
@@ -13,26 +13,19 @@ class Rotor
 {
 
 public:
+	explicit Rotor(const ERotors& chosen_rotor);
 
-	Rotor(const E_Rotors& ChosenRotor);
+	void SetRotor(const string& wiring, const char& ring_notch);
+	void ShowRotor() const;
+	void Rotate(const bool& forward = true, const size_t& num_rotations = 1);
+	void RotateToLetter(const char& letter);
+	size_t Forward(const size_t& in_signal);
+	size_t Backward(const size_t& in_signal);
+	char GetCurrentRotorLetter() const;
 
-	void SetRotor(const string& Wiring, const char& Notch);
-
-	void ShowRotor();
-
-	void Rotate(const bool& Forward = true, const size_t& NumRotations = 1);
-
-	void RotateToLetter(const char& Letter);
-
-	size_t Forward(const size_t& InSignal);
-
-	size_t Backward(const size_t& InSignal);
-	
-	// Property Members
-
-	string LeftRotorLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	string RightRotorWiring;
-	char Notch;
+	string left_rotor_letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	string right_rotor_wiring;
+	char notch;
 
 };
 

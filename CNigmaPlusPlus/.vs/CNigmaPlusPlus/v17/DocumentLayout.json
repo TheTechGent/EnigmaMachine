@@ -1,46 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\02_Learning\\02_Projects\\EnigmaMachine\\CNigmaPlusPlus\\",
+  "WorkspaceRootPath": "D:\\01_Projects\\EnigmaMachine\\CNigmaPlusPlus\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|D:\\02_Learning\\02_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Logs.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|solutionrelative:Logs.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|D:\\02_Learning\\02_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Logs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|solutionrelative:Logs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|D:\\02_Learning\\02_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|solutionrelative:Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|D:\\02_Learning\\02_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Plugboard.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|solutionrelative:Plugboard.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|D:\\02_Learning\\02_Projects\\EnigmaMachine\\CNigmaPlusPlus\\EnigmaMachine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|solutionrelative:EnigmaMachine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|D:\\02_Learning\\02_Projects\\EnigmaMachine\\CNigmaPlusPlus\\EnigmaMachine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|solutionrelative:EnigmaMachine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|D:\\02_Learning\\02_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Plugboard.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|solutionrelative:Plugboard.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|D:\\02_Learning\\02_Projects\\EnigmaMachine\\CNigmaPlusPlus\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|solutionrelative:pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|D:\\02_Learning\\02_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Rotor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|D:\\01_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Rotor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|solutionrelative:Rotor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|D:\\02_Learning\\02_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Rotor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|D:\\01_Projects\\EnigmaMachine\\CNigmaPlusPlus\\enigma_machine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|solutionrelative:enigma_machine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|D:\\01_Projects\\EnigmaMachine\\CNigmaPlusPlus\\enigma_machine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|solutionrelative:enigma_machine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|D:\\01_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|solutionrelative:Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|D:\\01_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Rotor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|solutionrelative:Rotor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|D:\\01_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Logs.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|solutionrelative:Logs.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|D:\\01_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Logs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|solutionrelative:Logs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|D:\\01_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Plugboard.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|solutionrelative:Plugboard.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|D:\\01_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Plugboard.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|solutionrelative:Plugboard.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|D:\\01_Projects\\EnigmaMachine\\CNigmaPlusPlus\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2CA21B96-56CF-475D-9073-984766565C05}|CNigmaPlusPlus.vcxproj|solutionrelative:pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,52 +58,78 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "pch.h",
+              "DocumentMoniker": "D:\\01_Projects\\EnigmaMachine\\CNigmaPlusPlus\\pch.h",
+              "RelativeDocumentMoniker": "pch.h",
+              "ToolTip": "D:\\01_Projects\\EnigmaMachine\\CNigmaPlusPlus\\pch.h",
+              "RelativeToolTip": "pch.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-27T15:41:05.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "D:\\01_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Source.cpp",
+              "RelativeDocumentMoniker": "Source.cpp",
+              "ToolTip": "D:\\01_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Source.cpp",
+              "RelativeToolTip": "Source.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-17T23:31:35.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Plugboard.h",
-              "DocumentMoniker": "D:\\02_Learning\\02_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Plugboard.h",
+              "DocumentMoniker": "D:\\01_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Plugboard.h",
               "RelativeDocumentMoniker": "Plugboard.h",
-              "ToolTip": "D:\\02_Learning\\02_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Plugboard.h",
+              "ToolTip": "D:\\01_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Plugboard.h",
               "RelativeToolTip": "Plugboard.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-09T20:55:00.979Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Plugboard.cpp",
-              "DocumentMoniker": "D:\\02_Learning\\02_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Plugboard.cpp",
+              "DocumentMoniker": "D:\\01_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Plugboard.cpp",
               "RelativeDocumentMoniker": "Plugboard.cpp",
-              "ToolTip": "D:\\02_Learning\\02_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Plugboard.cpp",
+              "ToolTip": "D:\\01_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Plugboard.cpp",
               "RelativeToolTip": "Plugboard.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-09T20:54:35.129Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Logs.h",
-              "DocumentMoniker": "D:\\02_Learning\\02_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Logs.h",
+              "DocumentMoniker": "D:\\01_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Logs.h",
               "RelativeDocumentMoniker": "Logs.h",
-              "ToolTip": "D:\\02_Learning\\02_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Logs.h",
+              "ToolTip": "D:\\01_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Logs.h",
               "RelativeToolTip": "Logs.h",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-03-29T15:50:32.913Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Logs.cpp",
-              "DocumentMoniker": "D:\\02_Learning\\02_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Logs.cpp",
+              "DocumentMoniker": "D:\\01_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Logs.cpp",
               "RelativeDocumentMoniker": "Logs.cpp",
-              "ToolTip": "D:\\02_Learning\\02_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Logs.cpp",
+              "ToolTip": "D:\\01_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Logs.cpp",
               "RelativeToolTip": "Logs.cpp",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-29T15:50:46.138Z",
               "EditorCaption": ""
@@ -111,77 +137,54 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Source.cpp",
-              "DocumentMoniker": "D:\\02_Learning\\02_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Source.cpp",
-              "RelativeDocumentMoniker": "Source.cpp",
-              "ToolTip": "D:\\02_Learning\\02_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Source.cpp",
-              "RelativeToolTip": "Source.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-17T23:31:35.826Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EnigmaMachine.h",
-              "DocumentMoniker": "D:\\02_Learning\\02_Projects\\EnigmaMachine\\CNigmaPlusPlus\\EnigmaMachine.h",
-              "RelativeDocumentMoniker": "EnigmaMachine.h",
-              "ToolTip": "D:\\02_Learning\\02_Projects\\EnigmaMachine\\CNigmaPlusPlus\\EnigmaMachine.h",
-              "RelativeToolTip": "EnigmaMachine.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAXAAAAAAAAAA==",
+              "Title": "enigma_machine.h",
+              "DocumentMoniker": "D:\\01_Projects\\EnigmaMachine\\CNigmaPlusPlus\\enigma_machine.h",
+              "RelativeDocumentMoniker": "enigma_machine.h",
+              "ToolTip": "D:\\01_Projects\\EnigmaMachine\\CNigmaPlusPlus\\enigma_machine.h",
+              "RelativeToolTip": "enigma_machine.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-03-24T22:21:43.085Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EnigmaMachine.cpp",
-              "DocumentMoniker": "D:\\02_Learning\\02_Projects\\EnigmaMachine\\CNigmaPlusPlus\\EnigmaMachine.cpp",
-              "RelativeDocumentMoniker": "EnigmaMachine.cpp",
-              "ToolTip": "D:\\02_Learning\\02_Projects\\EnigmaMachine\\CNigmaPlusPlus\\EnigmaMachine.cpp",
-              "RelativeToolTip": "EnigmaMachine.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAfAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "enigma_machine.cpp",
+              "DocumentMoniker": "D:\\01_Projects\\EnigmaMachine\\CNigmaPlusPlus\\enigma_machine.cpp",
+              "RelativeDocumentMoniker": "enigma_machine.cpp",
+              "ToolTip": "D:\\01_Projects\\EnigmaMachine\\CNigmaPlusPlus\\enigma_machine.cpp",
+              "RelativeToolTip": "enigma_machine.cpp",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAHAAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-24T22:33:24.215Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "pch.h",
-              "DocumentMoniker": "D:\\02_Learning\\02_Projects\\EnigmaMachine\\CNigmaPlusPlus\\pch.h",
-              "RelativeDocumentMoniker": "pch.h",
-              "ToolTip": "D:\\02_Learning\\02_Projects\\EnigmaMachine\\CNigmaPlusPlus\\pch.h",
-              "RelativeToolTip": "pch.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-27T15:41:05.926Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "Rotor.h",
-              "DocumentMoniker": "D:\\02_Learning\\02_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Rotor.h",
+              "DocumentMoniker": "D:\\01_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Rotor.h",
               "RelativeDocumentMoniker": "Rotor.h",
-              "ToolTip": "D:\\02_Learning\\02_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Rotor.h",
+              "ToolTip": "D:\\01_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Rotor.h",
               "RelativeToolTip": "Rotor.h",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABYAAABHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-26T12:04:01.435Z"
+              "WhenOpened": "2025-03-26T12:04:01.435Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
               "Title": "Rotor.cpp",
-              "DocumentMoniker": "D:\\02_Learning\\02_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Rotor.cpp",
+              "DocumentMoniker": "D:\\01_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Rotor.cpp",
               "RelativeDocumentMoniker": "Rotor.cpp",
-              "ToolTip": "D:\\02_Learning\\02_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Rotor.cpp",
+              "ToolTip": "D:\\01_Projects\\EnigmaMachine\\CNigmaPlusPlus\\Rotor.cpp",
               "RelativeToolTip": "Rotor.cpp",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAEAAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-24T23:28:19.613Z"
+              "WhenOpened": "2025-03-24T23:28:19.613Z",
+              "EditorCaption": ""
             }
           ]
         }

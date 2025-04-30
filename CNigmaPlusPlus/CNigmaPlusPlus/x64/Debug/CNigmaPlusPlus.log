@@ -1,8 +1,4 @@
-﻿  EnigmaMachine.cpp
-  Logs.cpp
-D:\02_Learning\02_Projects\EnigmaMachine\CNigmaPlusPlus\Logs.cpp(36,7): error C2143: syntax error: missing ';' before ')'
-D:\02_Learning\02_Projects\EnigmaMachine\CNigmaPlusPlus\Logs.cpp(38,1): error C2143: syntax error: missing ';' before '}'
-D:\02_Learning\02_Projects\EnigmaMachine\CNigmaPlusPlus\Logs.cpp(38,1): error C2143: syntax error: missing ')' before '}'
-D:\02_Learning\02_Projects\EnigmaMachine\CNigmaPlusPlus\Logs.cpp(38,1): error C2059: syntax error: '}'
-  Source.cpp
+﻿  Source.cpp
+  enigma_machine.cpp
   Generating Code...
+  CNigmaPlusPlus.vcxproj -> D:\01_Projects\EnigmaMachine\CNigmaPlusPlus\x64\Debug\CNigmaPlusPlus.exe

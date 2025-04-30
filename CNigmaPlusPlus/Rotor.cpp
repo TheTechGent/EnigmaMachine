@@ -1,9 +1,9 @@
 #include "pch.h"
 #include "Rotor.h"
 
-Rotor::Rotor(const E_Rotors& ChosenRotor) 
+Rotor::Rotor(const ERotors& chosen_rotor) 
 {
-	switch (ChosenRotor)
+	switch (chosen_rotor)
 	{
 	case I: SetRotor("EKMFLGDQVZNTOWYHXUSPAIBRCJ", 'Q'); break;
 	case II: SetRotor("AJDKSIRUXBLHWTMCQGZNPYFVOE", 'E'); break;
@@ -14,62 +14,67 @@ Rotor::Rotor(const E_Rotors& ChosenRotor)
 
 }
 
-void Rotor::SetRotor(const string& Wiring, const char& RingNotch)
+void Rotor::SetRotor(const string& wiring, const char& ring_notch)
 {
-	Notch = RingNotch;
-	RightRotorWiring = Wiring;
+	notch = ring_notch;
+	right_rotor_wiring = wiring;
 }
 
 
-size_t Rotor::Forward(const size_t& InSignal)
+size_t Rotor::Forward(const size_t& in_signal)
 {
-	const char Letter = RightRotorWiring[InSignal];
-	const size_t OutSignal = LeftRotorLetters.find(Letter);
+	const char letter = right_rotor_wiring[in_signal];
+	const size_t out_signal = left_rotor_letters.find(letter);
 
-	return OutSignal;
+	return out_signal;
 }
 
-size_t Rotor::Backward(const size_t& InSignal)
+size_t Rotor::Backward(const size_t& in_signal)
 {
-	const char Letter = LeftRotorLetters[InSignal];
-	const size_t OutSignal = RightRotorWiring.find(Letter);
+	const char letter = left_rotor_letters[in_signal];
+	const size_t out_signal = right_rotor_wiring.find(letter);
 
-	return OutSignal;
+	return out_signal;
 }
 
-void Rotor::ShowRotor()
+void Rotor::ShowRotor() const
 {
-	cout << RightRotorWiring << endl;
-	cout << LeftRotorLetters << endl;
+	cout << right_rotor_wiring << "\n";
+	cout << left_rotor_letters << "\n";
 }
 
-void Rotor::Rotate(const bool& Forward, const size_t& NumRotations)
+char Rotor::GetCurrentRotorLetter() const
+{
+	 return left_rotor_letters[0];
+}
+
+void Rotor::Rotate(const bool& forward, const size_t& num_rotations)
 {
 
-	if (Forward)
+	if (forward)
 	{
-		for (size_t dex = NumRotations; dex != 0; dex--)
+		for (size_t dex = num_rotations; dex != 0; dex--)
 		{
-			RightRotorWiring = RightRotorWiring.substr(1) + RightRotorWiring[0];
-			LeftRotorLetters = LeftRotorLetters.substr(1) + LeftRotorLetters[0];
+			right_rotor_wiring = right_rotor_wiring.substr(1) + right_rotor_wiring[0];
+			left_rotor_letters = left_rotor_letters.substr(1) + left_rotor_letters[0];
 		}
 	}
 	else
 	{
-		for (size_t dex = NumRotations; dex != 0; dex--)
+		for (size_t dex = num_rotations; dex != 0; dex--)
 		{
 			
-			RightRotorWiring = RightRotorWiring[25] + RightRotorWiring;
-			LeftRotorLetters = LeftRotorLetters[25] + LeftRotorLetters;
-			RightRotorWiring.pop_back();
-			LeftRotorLetters.pop_back();
+			right_rotor_wiring = right_rotor_wiring[25] + right_rotor_wiring;
+			left_rotor_letters = left_rotor_letters[25] + left_rotor_letters;
+			right_rotor_wiring.pop_back();
+			left_rotor_letters.pop_back();
 		}
 	}
 	
 }
 
-void Rotor::RotateToLetter(const char& Letter)
+void Rotor::RotateToLetter(const char& letter)
 {
-	const size_t n = LeftRotorLetters.find(Letter);
+	const size_t n = left_rotor_letters.find(letter);
 	Rotate(n);
 }

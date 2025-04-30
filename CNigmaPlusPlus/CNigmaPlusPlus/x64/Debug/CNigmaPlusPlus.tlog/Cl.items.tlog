@@ -1,7 +1,8 @@
-D:\02_Learning\02_Projects\EnigmaMachine\CNigmaPlusPlus\EnigmaMachine.cpp;D:\02_Learning\02_Projects\EnigmaMachine\CNigmaPlusPlus\CNigmaPlusPlus\x64\Debug\EnigmaMachine.obj
-D:\02_Learning\02_Projects\EnigmaMachine\CNigmaPlusPlus\Keyboard.cpp;D:\02_Learning\02_Projects\EnigmaMachine\CNigmaPlusPlus\CNigmaPlusPlus\x64\Debug\Keyboard.obj
-D:\02_Learning\02_Projects\EnigmaMachine\CNigmaPlusPlus\pch.cpp;D:\02_Learning\02_Projects\EnigmaMachine\CNigmaPlusPlus\CNigmaPlusPlus\x64\Debug\pch.obj
-D:\02_Learning\02_Projects\EnigmaMachine\CNigmaPlusPlus\Plugboard.cpp;D:\02_Learning\02_Projects\EnigmaMachine\CNigmaPlusPlus\CNigmaPlusPlus\x64\Debug\Plugboard.obj
-D:\02_Learning\02_Projects\EnigmaMachine\CNigmaPlusPlus\Reflector.cpp;D:\02_Learning\02_Projects\EnigmaMachine\CNigmaPlusPlus\CNigmaPlusPlus\x64\Debug\Reflector.obj
-D:\02_Learning\02_Projects\EnigmaMachine\CNigmaPlusPlus\Rotor.cpp;D:\02_Learning\02_Projects\EnigmaMachine\CNigmaPlusPlus\CNigmaPlusPlus\x64\Debug\Rotor.obj
-D:\02_Learning\02_Projects\EnigmaMachine\CNigmaPlusPlus\Source.cpp;D:\02_Learning\02_Projects\EnigmaMachine\CNigmaPlusPlus\CNigmaPlusPlus\x64\Debug\Source.obj
+D:\01_Projects\EnigmaMachine\CNigmaPlusPlus\enigma_machine.cpp;D:\01_Projects\EnigmaMachine\CNigmaPlusPlus\CNigmaPlusPlus\x64\Debug\enigma_machine.obj
+D:\01_Projects\EnigmaMachine\CNigmaPlusPlus\Keyboard.cpp;D:\01_Projects\EnigmaMachine\CNigmaPlusPlus\CNigmaPlusPlus\x64\Debug\Keyboard.obj
+D:\01_Projects\EnigmaMachine\CNigmaPlusPlus\Logs.cpp;D:\01_Projects\EnigmaMachine\CNigmaPlusPlus\CNigmaPlusPlus\x64\Debug\Logs.obj
+D:\01_Projects\EnigmaMachine\CNigmaPlusPlus\pch.cpp;D:\01_Projects\EnigmaMachine\CNigmaPlusPlus\CNigmaPlusPlus\x64\Debug\pch.obj
+D:\01_Projects\EnigmaMachine\CNigmaPlusPlus\Plugboard.cpp;D:\01_Projects\EnigmaMachine\CNigmaPlusPlus\CNigmaPlusPlus\x64\Debug\Plugboard.obj
+D:\01_Projects\EnigmaMachine\CNigmaPlusPlus\Reflector.cpp;D:\01_Projects\EnigmaMachine\CNigmaPlusPlus\CNigmaPlusPlus\x64\Debug\Reflector.obj
+D:\01_Projects\EnigmaMachine\CNigmaPlusPlus\Rotor.cpp;D:\01_Projects\EnigmaMachine\CNigmaPlusPlus\CNigmaPlusPlus\x64\Debug\Rotor.obj
+D:\01_Projects\EnigmaMachine\CNigmaPlusPlus\Source.cpp;D:\01_Projects\EnigmaMachine\CNigmaPlusPlus\CNigmaPlusPlus\x64\Debug\Source.obj
