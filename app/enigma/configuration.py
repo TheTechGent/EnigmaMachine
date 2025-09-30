@@ -1,0 +1,31 @@
+from enum import Enum
+
+
+class e_rotors(Enum):
+    """
+    Below are the 5 rotors, 1-3 from 1930 original Enigma Machine and 4, 5 from 1938:\n
+    I = EKMFLGDQVZNTOWYHXUSPAIBRCJ, Q\n
+    II = AJDKSIRUXBLHWTMCQGZNPYFVOE, E\n
+    III = BDFHJLCPRTXVZNYEIWGAKMUSQO, V\n
+    IV = ESOVPZJAYQUIRHXLNFTGKDCMWB, J\n
+    V = VZBRGITYUPSDNHLXAWMJQOFECK, Z\n
+    """
+
+    I = ("EKMFLGDQVZNTOWYHXUSPAIBRCJ", "Q")
+    II = ("AJDKSIRUXBLHWTMCQGZNPYFVOE", "E")
+    III = ("BDFHJLCPRTXVZNYEIWGAKMUSQO", "V")
+    IV = ("ESOVPZJAYQUIRHXLNFTGKDCMWB", "J")
+    V = ("VZBRGITYUPSDNHLXAWMJQOFECK", "Z")
+
+
+class e_reflectors(Enum):
+    """
+    Below are the 3 original reflectors:\n
+    Reflector A = EJMZALYXVBWFCRQUONTSPIKHGD\n
+    Reflector B = YRUHQSLDPXNGOKMIEBFZCWVJAT\n
+    Reflector C = FVPJIAOYEDRZXWGCTKUQSBNMHL\n
+    """
+
+    A = "EJMZALYXVBWFCRQUONTSPIKHGD"
+    B = "YRUHQSLDPXNGOKMIEBFZCWVJAT"
+    C = "FVPJIAOYEDRZXWGCTKUQSBNMHL"

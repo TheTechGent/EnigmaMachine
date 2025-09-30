@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enigma Machine</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Engima Machine</h1>
+
+      <div class="machine">
+        <!-- lampboard -->
+        <div class="lampboard">
+          <div class="lamp-rows">
+            <div class="lamp-row-top">
+              <!-- QWERTYUIOP -->
+              <span class="lamp" id="lamp-Q">Q</span>
+              <span class="lamp" id="lamp-W">W</span>
+              <span class="lamp" id="lamp-E">E</span>
+              <span class="lamp" id="lamp-R">R</span>
+              <span class="lamp" id="lamp-T">T</span>
+              <span class="lamp" id="lamp-Y">Y</span>
+              <span class="lamp" id="lamp-U">U</span>
+              <span class="lamp" id="lamp-I">I</span>
+              <span class="lamp" id="lamp-O">O</span>
+              <span class="lamp" id="lamp-P">P</span>
+            </div>
+            <div class="lamp-row-middle">
+              <!-- ASDFGHJKL -->
+              <span class="lamp" id="lamp-Q">Q</span>
+              <span class="lamp" id="lamp-W">W</span>
+              <span class="lamp" id="lamp-E">E</span>
+              <span class="lamp" id="lamp-R">R</span>
+              <span class="lamp" id="lamp-T">T</span>
+              <span class="lamp" id="lamp-Z">Z</span>
+              <span class="lamp" id="lamp-U">U</span>
+              <span class="lamp" id="lamp-I">I</span>
+              <span class="lamp" id="lamp-O">O</span>
+            </div>
+            <div class="lamp-row-bottom">
+              <!-- ZXCVBNM -->
+              <span class="lamp" id="lamp-Q">Q</span>
+              <span class="lamp" id="lamp-W">W</span>
+              <span class="lamp" id="lamp-E">E</span>
+              <span class="lamp" id="lamp-R">R</span>
+              <span class="lamp" id="lamp-T">T</span>
+              <span class="lamp" id="lamp-Z">Z</span>
+              <span class="lamp" id="lamp-U">U</span>
+              <span class="lamp" id="lamp-I">I</span>
+              <span class="lamp" id="lamp-O">O</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Engima Congfig -->
+    <!-- Select Rotor -->
+    <div class="rotor-settings">
+      <div class="rotor">
+        <label>Rotor 1</label>
+        <select id="rotor1">
+          <option value="I">I</option>
+          <option value="II">II</option>
+          <option value="III" selected>III</option>
+          <option value="IV">IV</option>
+          <option value="V">V</option>
+        </select>
+      </div>
+      <div class="rotor">
+        <label>Rotor 2</label>
+        <select id="rotor2">
+          <option value="I">I</option>
+          <option value="II" selected>II</option>
+          <option value="III">III</option>
+          <option value="IV">IV</option>
+          <option value="V">V</option>
+        </select>
+      </div>
+      <div class="rotor">
+        <label>Rotor 3</label>
+        <select id="rotor3">
+          <option value="I" selected>I</option>
+          <option value="II">II</option>
+          <option value="III">III</option>
+          <option value="IV">IV</option>
+          <option value="V">V</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Select Reflector -->
+    <div class="reflector-settings">
+      <div class="reflector">
+        <label>ReflectorA</label>
+        <select id="reflector">
+          <option value="A">A</option>
+          <option value="B" selected>B</option>
+          <option value="C">C</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Message input and enciphered output -->
+    <div class="message-area">
+      <textarea
+        id="input-message"
+        placeholder="Type your message here..."
+      ></textarea>
+      <textarea
+        id="output-message"
+        placeholder="Enciphered message appears here..."
+        readonly
+      ></textarea>
+    </div>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>
