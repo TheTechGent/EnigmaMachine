@@ -4,6 +4,7 @@ from fastapi.responses import FileResponse, JSONResponse
 from app.api.routes import router
 
 import os
+import uvicorn
 
 # Create the FastAPI app
 app = FastAPI(
@@ -29,12 +30,18 @@ async def health_check():
     """Health check endpoint for Railway"""
     return JSONResponse(
         status_code=status.HTTP_200_OK,
-        content={"status": "healthy", "service": "enigma-machine"},
+        content={
+            "status": "healthy",
+            "service": "enigma-machine",
+            "port": port,
+            "message": f"Running on port {port}",
+        },
     )
 
 
 if __name__ == "__main__":
-    import uvicorn
 
     port = int(os.getenv("PORT", 8000))
-    uvicorn.run("app.main:app", host="0.0.0.0", port=port)
+    print(f"🚀 Starting Enigma Machine on port {port}")
+    print(f"🌍 Environment: {os.getenv('RAILWAY_ENVIRONMENT', 'local')}")
+    uvicorn.run("app.main:app", host="0.0.0.0", port=port, log_level="info")
