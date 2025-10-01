@@ -1,7 +1,8 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, status
 from fastapi.staticfiles import StaticFiles
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, JSONResponse
 from app.api.routes import router
+
 import os
 
 # Create the FastAPI app
@@ -21,6 +22,15 @@ if os.path.exists("static"):
 async def serve_frontend():
     """Serve the main HTML page"""
     return FileResponse("static/index.html")
+
+
+@app.get("/health")
+async def health_check():
+    """Health check endpoint for Railway"""
+    return JSONResponse(
+        status_code=status.HTTP_200_OK,
+        content={"status": "healthy", "service": "enigma-machine"},
+    )
 
 
 if __name__ == "__main__":

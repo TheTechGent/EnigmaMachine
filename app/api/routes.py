@@ -11,12 +11,6 @@ def get_enigma_service() -> EnigmaService:
     return EnigmaService()
 
 
-@router.get("/health")
-async def health_check():
-    """Health check endpoint"""
-    return {"status": "healthy"}
-
-
 @router.post("/api/encrypt", response_model=EncryptResponse)
 async def encrypt_message(
     request: EncryptRequest, enigma_service: EnigmaService = Depends(get_enigma_service)
