@@ -1,13 +1,13 @@
 # 🛡️ Enigma Machine Web App
 
-A modern, web-based recreation of the historic Enigma Machine using Python, FastAPI, and vanilla JavaScript. This project demonstrates full-stack development, containerized deployment, and test-driven engineering.
+A modern, web-based recreation of the historic Enigma Machine using Python, FastAPI, and vanilla JavaScript. This project demonstrates full-stack development, web deployment, and test-driven engineering.
 
 ---
 
 ## 🚀 Live Demo
 
-Hosted entirely on [Railway](https://railway.app) via a Docker container:  
-**Frontend + Backend**: [Enigma Machine](https://tbadded)
+Hosted entirely on [Railway](https://railway.app):  
+**Frontend + Backend**: [Enigma Machine](https://www.thetechgent.co.uk)
 
 ---
 
@@ -48,9 +48,21 @@ pytest --cov=app/enigma
 
 ## 📦 Deployment Strategy
 
-- The entire app (frontend + backend) is served from a single FastAPI container
-- Static files are served using FastAPI’s `StaticFiles` middleware
-- Railway builds and hosts the Docker container automatically via GitHub integration
+### Continuous Deployment with Railway PaaS
+
+- **Git-Ops Workflow**: Automatic deployment triggered by pushes to `main` branch
+- **Platform**: Railway as Platform-as-a-Service (no Docker configuration required)
+- **Build System**: NIXPACKS auto-detects Python project and installs dependencies
+- **Architecture**: Single FastAPI service serves both API endpoints and static frontend files
+- **Health Monitoring**: Zero-downtime deployments with `/health` endpoint validation
+- **Environment**: Containerized deployment managed entirely by Railway's infrastructure
+
+**Configuration:**
+
+- `railway.toml` defines build and deployment settings
+- `requirements.txt` specifies Python dependencies
+- Static files served via FastAPI's `StaticFiles` middleware
+- Automatic port binding via Railway's `$PORT` environment variable
 
 ---
 
@@ -99,18 +111,6 @@ EnigmaMachine/
 
 ---
 
-## 🎯 Why This Project Matters
-
-This project showcases:
-
-- Full-stack development without heavy frameworks
-- Clean separation of concerns between frontend and backend
-- Containerized deployment for portability and scalability
-- Test-driven development and coverage discipline
-- Historical computing reimagined with modern tools
-
----
-
 ## 🔮 Future Enhancements
 
 This project is a work in progress. There are features I want to add:
@@ -135,8 +135,7 @@ Python was my first implementation of the Enigma machine but this was originally
   → [View on GitHub](https://github.com/TheTechGent/C_nigmaMachine_PlusPlus)
 
 - **Unreal Engine Blueprint Version**  
-  This version was to demonstrate to the student that sparked this passion project how they could approach it. It was for their game so recreating it in Unreal was the end goal.  
-  → [View on GitHub](https://github.com/yourusername/enigma-unreal)
+  This version was to demonstrate to the student that sparked this passion project how they could approach it. It was for their game so recreating it in Unreal was the end goal.
 
 These implementations complement the Python web app by showcasing cross-disciplinary fluency in systems programming, game development, and full-stack architecture.
 
@@ -144,8 +143,10 @@ These implementations complement the Python web app by showcasing cross-discipli
 
 ## TO DO
 
-  [] Feature - introduce web front end.
-  [] Refactor - Work on edge cases like spaces, different letter cases and non-alpha characters.
-  [] Refactor - Clean code and restruture to serve web front end.
-  [] Feature - backspace deletes previously entered letter and reverses the rotor step
+- Fix: frontend text field not displaying encrypted message.
+- Fix: frontend lampboard not lighting up encypted letter.
+- Feature: add interactive plugboard to set letter swap.
+- Feature: backspace deletes previously entered letter and reverses the rotor step
+- Refactor: Work on edge cases - punctuation, non-alpha characters.
+- Refactor: Clean up code.
   
