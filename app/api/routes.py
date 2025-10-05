@@ -1,6 +1,7 @@
 from fastapi import APIRouter, HTTPException, Depends
 from app.api.models import EncryptRequest, EncryptResponse
 from app.services.enigma_service import EnigmaService
+import logging
 
 # Create router instance
 router = APIRouter()
@@ -11,12 +12,17 @@ def get_enigma_service() -> EnigmaService:
     return EnigmaService()
 
 
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger(__name__)
+
+
 @router.post("/api/encrypt", response_model=EncryptResponse)
 async def encrypt_message(
     request: EncryptRequest, enigma_service: EnigmaService = Depends(get_enigma_service)
 ):
     """Encrypt a message using the Enigma machine"""
     try:
+        logger.info(f"Received request: {request}")
         return enigma_service.encrypt_message(request)
     except ValueError as e:
         raise HTTPException(status_code=400, detail=str(e))

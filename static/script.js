@@ -7,6 +7,16 @@ class EnigmaMachineUI {
     this.rotor2 = document.getElementById("rotor2");
     this.rotor3 = document.getElementById("rotor3");
 
+    // Check if all elements were found
+    console.log("Elements found:", {
+      inputMessage: !!this.inputMessage,
+      outputMessage: !!this.outputMessage,
+      reflector: !!this.reflector,
+      rotor1: !!this.rotor1,
+      rotor2: !!this.rotor2,
+      rotor3: !!this.rotor3,
+    });
+
     this.initEventListeners();
   }
 
@@ -15,20 +25,25 @@ class EnigmaMachineUI {
 
     [this.reflector, this.rotor1, this.rotor2, this.rotor3].forEach(
       (configChange) => {
-        configChange.addEventListener(
-          "change",
-          this.encipherCurrentMessage.bind(this)
-        );
+        configChange.addEventListener("change", (event) => {
+          console.log(
+            "Configuration changed:",
+            event.target.id,
+            event.target.value
+          );
+          this.encryptCurrentMessage();
+        });
       }
     );
   }
 
   async handleInput(event) {
     const message = event.target.value;
-    await this.encipherMessage(message);
+    console.log("Input detected:", message);
+    await this.encryptMessage(message);
   }
 
-  async encipherMessage() {
+  async encryptMessage(message) {
     if (!message.trim()) {
       this.outputMessage.value = "";
       return;
@@ -46,7 +61,9 @@ class EnigmaMachineUI {
     };
 
     try {
-      const response = await fetch("/api/encipher", {
+      console.log("Sending POST request to /api/encrypt with config:", config);
+
+      const response = await fetch("/api/encrypt", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -54,21 +71,23 @@ class EnigmaMachineUI {
         body: JSON.stringify(config),
       });
 
+      console.log("Response received:", response);
+
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
       const result = await response.json();
+      console.log("Encrypted message received:", result);
       this.outputMessage.value = result.encrypted_message;
 
-      // lamp lights up corresponding letter.
       if (result.encrypted_message) {
         const lastChar = result.encrypted_message.slice(-1);
         this.glowLamp(lastChar);
       }
     } catch (error) {
-      console.error("Encryption error", error);
-      this.outputMessage.value = "Error: Could not encipher message";
+      console.error("Encryption error:", error);
+      this.outputMessage.value = "Error: Could not encrypt message";
     }
   }
 
@@ -95,5 +114,5 @@ class EnigmaMachineUI {
 
 // Initialize the UI when the page loads
 document.addEventListener("DOMContentLoaded", () => {
-  new EnigmaUI();
+  new EnigmaMachineUI();
 });

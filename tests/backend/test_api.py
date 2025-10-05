@@ -131,3 +131,24 @@ def test_static_files():
     response = client.get("/static/script.js")
     assert response.status_code == 200
     assert "javascript" in response.headers["content-type"]
+
+
+def test_encrypt_message():
+    response = client.post(
+        "/api/encrypt",
+        json={
+            "message": "HELLO",
+            "rotor1": "I",
+            "rotor2": "II",
+            "rotor3": "III",
+        },
+    )
+    assert response.status_code == 200
+    assert "encrypted_message" in response.json()
+
+
+def test_get_config():
+    response = client.get("/api/config")
+    assert response.status_code == 200
+    assert "rotors" in response.json()
+    assert "reflectors" in response.json()
